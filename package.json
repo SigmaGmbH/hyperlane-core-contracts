@@ -48,7 +48,7 @@
   "repository": "https://github.com/hyperlane-xyz/hyperlane-monorepo",
   "scripts": {
     "compile": "hardhat compile --force",
-    "build": "hardhat compile && tsc && sh update_imports.sh",
+    "build": "hardhat compile && tsc",
     "lint": "solhint contracts/**/*.sol",
     "clean": "hardhat clean && rm -rf ./dist ./cache ./types ./coverage",
     "coverage": "./coverage.sh",
