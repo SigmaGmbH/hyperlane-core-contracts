@@ -1,6 +1,6 @@
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
-import '@typechain/hardhat';
+import '@swisstronik/hardhat-typechain';
 import 'hardhat-gas-reporter';
 import 'solidity-coverage';
 
@@ -22,7 +22,7 @@ module.exports = {
   },
   typechain: {
     outDir: './types',
-    target: 'ethers-v5-typechain',
+    target: 'ethers-v5',
     alwaysGenerateOverloads: true,
   },
   mocha: {
